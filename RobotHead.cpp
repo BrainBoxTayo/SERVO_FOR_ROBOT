@@ -10,6 +10,7 @@ robotArm::robotArm(){
 void robotArm::initialize(int servoPin, int ResistorPin) {
   servo.attach(servoPin);
   resistorPin = ResistorPin;
+  
 }
 void robotArm::moverResist() {
   servo.write(moveServoWithRes(moverServoVariable, resistorPin));
